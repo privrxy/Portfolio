@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #3b141c;
+    color:#f3961c; 
+    font-family: "Miniver", sans-serif;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    background-color:#3b141c;
+    padding: 8px;
+    text-align: center;
+    display: flex; 
+    justify-content: space-evenly; 
+    height: 40px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    padding: 10px 15px; 
+    border-radius: 25px; 
+    transition: background-color 0.5s ease; 
+}
+
+nav a:hover {
+    background-color: #f3961c;
+    color: #252525; 
+    border-radius: 25px; 
+}
+
+main {
+    padding: 20px;
+}
+#home{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.home_art{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.home_art h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home_art p{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.home_art img{
+    height: 400px;
+    width: 300px;
+    margin-bottom: 200px;
+    margin-left: 150px;
+    border-radius: 20%;
+}
+#about{
+    height: 500px;
+    width: 100%;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleabout{
+    height: 50px;
+    width: 80%;
+}
+
+#capabout{
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+
+#artcontact{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #3b141c;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+footer a:hover{
+    background-color: #f3961c;
+    color: #252525; 
+    border-radius: 25px; 
+}
+
+footer p {
+    color:#f3961c; 
+    font-family: "Miniver", sans-serif;
+    font-size: large;
+}
+
+#contact{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px; 
+}
+#contacttitle{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info {
+    margin: 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#projects {
+    height: 600px;
+    width: 100%;
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mainproj{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#titleproj{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Projectart{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    height: 350px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3b141c;
+    color: white;
+}
+@media (min-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+.hidden {
+    height: 400px;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b141c;
+    border: 2px solid #3b141c;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover {
+    background-color: #f3961c;
+    color: #252525;
+    border-color: #f3961c;
+}
+
+.viewproj{
+    text-decoration: none;
+    color: #fff;
+    background-color: #f3961c;
+    border: 2px solid #f3961c;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.viewproj:hover{
+    color: #252525;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+    }
+
+    .home_art {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_art img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Projectart {
+        margin-bottom: 20px;
+        width: 90%; 
+    }
+
+    .Projectart img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    footer .social-links {
+        text-align: center;
+    }
+
+    footer .social-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #about {
+        padding: 20px;
+        height: 650px;
+        margin-top: 350px;
+    }
+
+    #capabout {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    #projects {
+        padding: 20px;
+        height: 850px;
+        margin-top: 450px;
+    }
+
+    #mainproj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact {
+        padding: 20px;
+        height: 500px;
+        margin-top: 500px;
+    }
+
+    #artcontact {
+        width: 90%; 
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
